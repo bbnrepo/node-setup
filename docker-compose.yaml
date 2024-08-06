@@ -1,0 +1,39 @@
+version: '2.1'
+
+volumes:
+  blockscoutpostgres:
+
+networks:
+  bharatblockchain:
+    name: bharatblockchain
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.239.0/24
+
+services:
+  generator:
+    build:
+      context: generator/.
+    environment:
+      - WRITERS=1
+    volumes:
+      - ./volumes/writers:/writers
+    networks:
+      bharatblockchain:
+        ipv4_address: 172.16.239.34
+
+  node1:
+    user: root
+    container_name: bbn-testnet-node1
+    image: ids/bbn-testnet:latest
+    volumes: 
+      - ./volumes/writers/1/keys:/opt/besu/besu/keys
+    ports:
+      - "8545:8545"
+      - "8546:8549"
+      - "9545:9545"
+    networks:
+      bharatblockchain:
+        ipv4_address: 172.16.239.35
+    restart: always
