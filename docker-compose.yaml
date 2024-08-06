@@ -26,7 +26,7 @@ services:
   node1:
     user: root
     container_name: bbn-testnet-node1
-    image: ids/bbn-testnet:latest
+    image: idscloudadmin/bbn-node:testnet-1.1
     volumes: 
       - ./volumes/writers/1/keys:/opt/besu/besu/keys
     ports:
