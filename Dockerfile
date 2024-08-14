@@ -5,7 +5,9 @@ FROM hyperledger/besu:23.10.2
 USER root
 
 # Create directories for Besu configuration and keys
-RUN mkdir -p /opt/besu/config /opt/besu/besu/keys
+RUN mkdir -p /opt/besu/config /opt/besu/besu/keys && \
+    chown -R besu:besu /opt/besu && \
+    chmod -R 700 /opt/besu/config
 
 # Copy the Besu configuration files into the container
 COPY config/besu /opt/besu/config/besu
@@ -17,5 +19,4 @@ EXPOSE 8545 8546 9545
 ENTRYPOINT ["besu"]
 CMD ["--config-file=/opt/besu/config/besu/config.toml", \
      "--genesis-file=/opt/besu/config/besu/genesis.json", \
-     "--static-nodes-file=/opt/besu/config/besu/static-nodes.json", \
-     "--node-private-key-file=/opt/besu/besu/keys/key"]
+     "--static-nodes-file=/opt/besu/config/besu/static-nodes.json"]

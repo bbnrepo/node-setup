@@ -1,0 +1,60 @@
+{
+	"nonce": "0x0",
+	"timestamp": "0x58ee40ba",
+	"extraData": "0xf88fa00000000000000000000000000000000000000000000000000000000000000000f86994dc5d93d811bba634d8b410e219f0482e8fe87a0b94f8072d492fc99023342eaf31d174a14fe5715a2994c60146bef70edb3bf6c315409754aa1792e8035c94ee0dacd86a31f8e101824cea2c42291edabb3de694fa66b3e3f13bef3c94609fa37d08850a3fef4f30c080c0",
+	"gasLimit": "0xf7b760",
+	"gasUsed": "0x0",
+	"number": "0x0",
+	"difficulty": "0x1",
+	"coinbase": "0x0000000000000000000000000000000000000000",
+	"mixHash": "0x63746963616c2062797a616e74696e65206661756c7420746f6c6572616e6365",
+	"parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+	"config": {
+	  "chainId": 1996,
+	  "homesteadBlock": 0,
+	  "eip150Block": 0,
+	  "eip150Hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+	  "eip155Block": 0,
+	  "eip158Block": 0,
+	  "byzantiumBlock": 0,
+	  "constantinopleBlock": 0,
+	  "petersburgBlock": 0,
+	  "istanbulBlock": 0,
+	  "muirglacierblock": 0,
+	  "berlinBlock": 0,
+	  "londonBlock": 0,
+	  "zeroBaseFee": true,
+	  "qbft": {
+		"blockperiodseconds": 10,
+		"epochlength": 30000,
+		"requesttimeoutseconds": 20
+	  }
+	},
+	"alloc": {
+	  "0xa691f39eb3de72625bd4c2f9f0b00eb2940f162a": {
+		"balance": "1000000000000000000000000000"
+	  },
+	  "0x7221d41a55ecc61af52ae608048a24b3d9f21d48": {
+		"balance": "1000000000000000000000000000"
+	  },
+	  "0x4040b1433666ee6c14f96b10e77ffde9bdafccee": {
+		"balance": "1000000000000000000000000000"
+	  },
+	  "0x599cc2d628578641dbc4be515e385156a8d0dae1": {
+		"balance": "1000000000000000000000000000"
+	  },
+	  "0xeff2cfb07986dcbe3e770c39b08777c3892d9d85": {
+		"balance": "1000000000000000000000000000"
+	  },
+	  "0x958906d32D588fEa9Dd9Fa042fd86f35328eb953": {
+		"balance": "0x33B2E3C9FD0803CE8000000"
+	  },
+	  "0xf5796eAc8A7EDcBe5B2CCFfF1D67D0DAfc2f461b": {
+		"balance": "0x33B2E3C9FD0803CE8000000"
+	  },
+	  "0xd9BcB1810e1d806018565313AeBeE95e97C5077d": {
+		"balance": "0x33B2E3C9FD0803CE8000000"
+	  }
+	}
+  }
+  

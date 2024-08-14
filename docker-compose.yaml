@@ -23,12 +23,12 @@ services:
       bharatblockchain:
         ipv4_address: 172.16.239.34
 
-  node1:
+  mainnet-node1:
     user: root
-    container_name: bbn-testnet-node1
-    image: ids/bbn-testnet:latest
+    container_name: bbnmainnet-node-1
+    image: idscloudadmin/bbn-node:mainnet-1.0
     volumes: 
-      - ./volumes/writers/1/keys:/opt/besu/besu/keys
+      - ./volumes/writers/1/keys:/opt/besu/besu/keys/
     ports:
       - "8545:8545"
       - "8546:8549"
